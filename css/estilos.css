@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h4{
+    color: #476b6b;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+header h2{
+    font-size: 30px;
+    color: #476b6b;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.menu__items li{
+    margin: 0 5px;
+}
+
+.menu__items li a{
+    padding: 8px;
+    text-decoration: none;
+    color: #476b6b;
+    font-size: 18px;
+    display: block;
+}
+
+.menu__items li:hover{
+    background-color: #BADA55;
+    transition: .4s;
+}
+
+.span__titulo{
+    color: #BADA55;
+}
+
+/*SECCION INICIO INDEX*/
+
+.span__inicio{
+    color: #476b6b;
+}
+
+.inicio__titulo{
+    font-size: 100px;
+}
+
+.inicio__parrafo{
+    font-size: 30px;
+}
+
+/*SECCION NIVELES INDEX*/
+
+.niveles__titulo{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #BADA55;
+    font-weight: bold;
+}
+
+.level-item{
+    border-radius: 6px;
+    margin: 15px 30px;
+    color: #476b6b;
+    cursor: pointer;
+}
+
+.level-item:hover{
+    background-color: #f0f5f5;
+    color: #000;
+    transition: .4s;
+}
+
+/*SECCION CARACTERISTICAS INDEX*/
+
+#caracteristicas{
+    margin-top: 50px;
+    color: #476b6b;
+}
+
+.caract__div{
+    cursor: pointer;
+}
+
+.caract__div:hover{
+   
+}
+
+
+.card-caract:hover{
+    background-color: #476b6b;
+    color: #BADA55;
+    transition: .4s;
+}
+
+#caracteristicas i{
+    font-size: 60px;
+}
+
+/*NOSOTROS*/
+
+.nosotros__titulo{
+    font-size: 100px;
+    color: #476b6b
+}
+
+.span__nosotros{
+    color: #BADA55;
+}
+
+.nosotros__p{
+    color: #476b6b;
+    font-size: 20px;
+}
+
+
+/*NIVELES*/
+
+.inicio__niveles--titulo{
+    font-size: 80px;
+    color: #BADA55;
+    font-weight: bold;
+}
+
+
+#niveles-grid img{
+    opacity: 0.8;
+    height: 300px;
+}
+
+table{
+    border: solid 5px #BADA55;
+    border-radius: 8px;
+}
+
+/*PRUEBA*/
+
+.prueba__titulo{
+    color: #BADA55;
+    font-size: 80px;
+}
+
+.span__prueba{
+    color: #476b6b;
+}
+
+.div__prueba{
+    cursor: pointer;
+}
+
+.card-prueba:hover{
+    background-color: #476b6b;
+    transition: .3s;
+    color: #000;
+}
+
+.card-prueba{
+    color: #476b6b;
+    border-radius: 6px;
+}
+
+#prueba__aside{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/aside-bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+#prueba__aside i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+#prueba__aside i:hover{
+    color: #BADA55;
+    transition: .4s;
+}
+
+/*CONTACTO*/
+.inscribirme__titulo{
+    font-size: 50px;
+    color: #fff;
+}
+
+#inscribirme h3{
+    font-size: 20px;
+    color: #fff;
+}
+
+form{
+    color: #fff;
+}
+
+footer{
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    height: 110px;
+}
+
+footer i:hover{
+    cursor: pointer;
+}
+
+footer h3{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    header h2{
+        font-size: 20px;
+    }
+
+    .menu__items li a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: block;
+    }
+
+    header h2{
+        padding-top: 10px;
+    }
+
+    .nosotros__titulo{
+        font-size: 70px;
+    }
+
+    #prueba__aside{
+        background-position: 50% 50%;
+    }
+
+    .prueba__titulo{
+        font-size: 60px;
+        margin: 0 auto;
+    }
+
+    .table{
+        display: none;
+    }
+
+    #niveles-button{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .menu{
+        height: 25vh;
+    }
+    
+    .menu__items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inicio__titulo{
+        font-size: 80px;
+    }
+
+    .nosotros__titulo{
+        font-size: 60px;
+    }
+
+    .prueba__titulo{
+        font-size: 40px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .nosotros__titulo{
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .inicio__titulo{
+        font-size: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
