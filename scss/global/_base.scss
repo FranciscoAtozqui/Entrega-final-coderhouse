@@ -27,22 +27,7 @@
 .prueba-extend3 {
     @extend #inicio;
     flex-direction: column;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../img/prueba.jpg");
-}
-
-/*maps*/
-$icons-footer: (
-    email: #c25e30,
-    facebook: #3a5795,
-    instagram: #fff,
-    whatsapp: #2eb82e
-);
-
-@each $icon, $color in $icons-footer {
-    .icon-#{$icon} {
-        color: $color;
-        font-size: 25px;
-    }
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/prueba.jpg");
 }
 
 @mixin bg-img {
@@ -56,6 +41,11 @@ $icons-footer: (
 .bg-img{
     @include bg-img;
 }
+
+h2,h4 {
+    color: #476b6b;
+}
+
 
 
 

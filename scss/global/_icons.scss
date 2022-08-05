@@ -1,0 +1,20 @@
+/*maps*/
+$icons-footer: (
+    email: #c25e30,
+    facebook: #3a5795,
+    instagram: #E1306C,
+    whatsapp: #2eb82e
+);
+
+@each $icon,
+$color in $icons-footer {
+    .icon-#{$icon}:hover {
+        color: $color;
+        font-size: 25px;
+    }
+
+    .icon-#{$icon} {
+        color: #fff;
+        font-size: 25px;
+    }
+}
